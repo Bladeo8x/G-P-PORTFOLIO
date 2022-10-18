@@ -4,7 +4,8 @@
     /* color: #333; */
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     background-color: #eee;
@@ -12,90 +13,16 @@ html, body {
 
 body {
     min-height: 100vh;
-    
-}
-
-.navContainer {
-    z-index: 99;
-    background-color: #eee;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    top: 0;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100px;
-    align-items: center;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-bottom: 1px solid #999;
-}
-
-/* .navContainer .headerBox {
-    display: flex;
-    align-items: center;
-} */
-
-.top-hr {
-    margin-top: 100px;
-}
-
-hr {
-    margin: 0;
-    padding: 0;
-}
-
-.hamburguer {
-    display: none;
-   
-    width: 25%;
-    margin-right: 0;
-
-
-}
-
-.hamburguer span {
-    display: block;
-    justify-content: flex-end;
-
-    height: 3px;
-    width: 30px;
-    background: #111;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: #DB2349;
-}
-
-.headerBox {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    /* width: 50%; */
-}
-
-.navBox {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-items: center;
-    /* width: 50%; */
 }
 
 ul {
-    display: inline-flex;
-justify-content: flex-end;
+    /* display: inline-flex; */
+    justify-content: flex-end;
     list-style-type: none;
-  }
-
-  a {
-    padding: 10px;
-    text-decoration: none;
-  }
+    padding: 0!important;
+}
 
 /* HERO with CSS effects on PERSPECTIVE word */
-
 .hero {
     display: flex;
     justify-content: center;
@@ -104,32 +31,37 @@ justify-content: flex-end;
     position: relative;
     height: 20vh;
     word-spacing: 8px;
+    font-size: 1.8em;
+    margin-bottom: 12em;
+    transition: all .25s linear;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #444;
 }
 
-.hero .perspective {
-    display: inline-block;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.hero .perspective span {
-    padding: 8px;
-}
-
+/* HERO text with CSS effects on PERSPECTIVE word */
 #rot1 {
     display: inline-block;
-    color: #333;
+    color: #444;
+    margin-right: .3em;
 }
 
 #rot1:hover {
     display: inline-block;
     transform: rotate(90deg);
-  }
+}
 
 #rot2 {
     display: inline-block;
     transform: rotate(-180deg);
     color: #106B8F;
+    margin-right: .3em;
+
 }
 
 #rot2:hover {
@@ -138,78 +70,93 @@ justify-content: flex-end;
 }
 
 #rot3 {
-color: #333;
+    color: #444;
+    margin-right: .3em;
+
 }
 
 #rot3:hover {
     display: inline-block;
     transform: rotate(-90deg);
-  }
+}
 
-  #rot4 {
+#rot4 {
     display: inline-block;
-    color: #333;
+    color: #444;
     transform: rotate(90deg);
+    margin-right: .3em;
 
-    }
-    
-    #rot4:hover {
-        display: inline-block;
-        transform: rotate(-180deg);
-        color: #DB2349;
-      }
+}
 
-/* HERO ENDING with CSS effects on PERSPECTIVE word */
+#rot4:hover {
+    display: inline-block;
+    transform: rotate(-180deg);
+    color: #DB2349;
+}
 
-/* HERO SECTION, BG IMAGE */
+/* HERO SECTION */
 .bgimage {
-    height:100vh;
-    background: url('images/heroImage.jpeg');
-    background-size:cover;
-    position:relative;
-}
-/* text css above hero image*/
-.hero_title {
-    font-size: 4.5rem;
-}
-.hero_desc {
-    font-size: 2rem;
-}
-.hero_text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    height: 100vh;
+    background: url("../Images/HeroImg.jpg") fixed center no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 /* ABOUT ME SECTION */
-.imageAboutPage {
+.img-about {
     width: 100%;
+    border-radius: .8em;
 }
 
-.aboutMeContainer {
-    min-height: 20vh;
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: .8em;
+    transition: all .25s linear;
+}
+.img-wrapper > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}
+.img-wrapper > .content {
+    position: absolute;
+    inset: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-wrapper > img,
+.img-wrapper > .content {
+    transition: 200ms ease-in-out;
+}
+.img-wrapper:hover > img.zoom {
+    transform: scale(1.1);
+}
+.img-wrapper:hover > img.blur {
+    filter: blur(5px);
+}
+.img-wrapper > .content.fade {
+    opacity: 0;
+}
+.img-wrapper:hover > .content.fade {
+    opacity: 1;
 }
 
-.aboutMeContainer h2 {
-    padding-left: 20px;
-}
-
-.workContainer {
-}
-
+/* EXPERIENCE SECTION */
 .workContainer h2 {
     padding-left: 20px;
-
 }
-
 .contestContainer h2 {
     padding-left: 20px;
-
 }
 
+/* FOOTER */
 footer {
     background-color: #222;
     min-height: 10vh;
@@ -217,50 +164,77 @@ footer {
     top: 100vh;
     width: 100%;
     margin-bottom: 0;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; */
 }
 
+/* Icons Hover */
 .high-icon {
     color: #eee;
 }
 .high-icon:hover {
     color: #999;
     transform: scale(1.2);
-    
 }
 .high-icon:active {
     color: #eee;
     transform: scale(.8);
 }
 
+/* Header Hover */
 .high-text {
+    font-size: 1.5rem;
     color: #333;
 }
 .high-text:hover {
     color: #999;
     transform: scale(1.1);
-    
 }
 .high-text:active {
-    /* color: #333; */
     transform: scale(1);
 }
 
-@media screen and (max-width:800px) {
-    .navContainer {
-        /* flex-direction: column; */
-    }
-
-    .navBox nav ul {
-        display: none;
-    }
-
-    .hamburguer {
-        display: block;
-        justify-content: center;
-    }
-
+.my-4 {
+    margin-bottom: 0!important;
 }
+
+.btn-primary {
+    background-color: #106B8F;
+    border-color: #106B8F;
+}
+.btn-primary:hover {
+    background-color: #055160;
+    border-color: #055160;
+}
+.btn-light {
+    background-color: #eee;
+    border-color: #eee;
+    width: 4em;
+    
+} 
+
+/* Responsive Layout */
+@media (max-width: 576px) {
+    .two-dots{
+        display:none;
+    }
+    .about-sm {
+        padding-top: 1.2em;
+        text-align: center !important;
+    }
+    .hero-small{
+        margin-bottom: 25rem;
+        font-size: 1.2em;
+    }
+ }
+
+ @media (max-width: 800px) {
+    .two-dots{
+        display:none;
+    }
+    .about-sm {
+        padding-top: 1.2em;
+        text-align: center !important;
+    }
+    .hero-small{
+        margin-bottom: 25rem;
+    }
+ }
