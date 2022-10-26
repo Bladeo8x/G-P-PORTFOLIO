@@ -93,13 +93,34 @@ ul {
     transform: rotate(-180deg);
     color: #DB2349;
 }
+/* .wave-text {
+    padding: 64px;
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s infinite linear;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 600px;
+    }
+    100% {
+      background-position: 1200px;
+    }
+  } */
 
-/* HERO SECTION */
+  /* HERO SECTION */
+
 .bgimage {
     height: 100vh;
     background: url("../Images/HeroImg.jpg") fixed center no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 /* ABOUT ME SECTION */
@@ -149,11 +170,28 @@ ul {
 }
 
 /* EXPERIENCE SECTION */
-.workContainer h2 {
+.bg-contest {
+    height: 100vh;
+    /* background: url("../Images/HeroImg.jpg") fixed center no-repeat; */
+    /* background-size: cover; */
+    position: relative;
+    overflow: hidden;
+}
+
+/* .workContainer h2 {
     padding-left: 20px;
 }
 .contestContainer h2 {
     padding-left: 20px;
+} */
+.container-grid {
+    display: grid;
+    grid-gap: 10px;
+}
+.container-grid img {   
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
 }
 
 /* FOOTER */
@@ -208,7 +246,6 @@ footer {
     background-color: #eee;
     border-color: #eee;
     width: 4em;
-    
 } 
 
 /* Responsive Layout */

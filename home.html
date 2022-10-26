@@ -6,16 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>EITO | ARCHITECTS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Script Bootstrap-5.2 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- Script for icons and fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Script for main interaction -->
-    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <!-- MDB Links -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
 </head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+<!-- Script Bootstrap-5.2 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- Script for icons and fonts -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Script for main interaction -->
+<link rel="stylesheet" href="./Assets/CSS/style.css">
 
 </html>
 
@@ -178,8 +182,53 @@
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Me</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body nav-link">
-                    ... ADDING MY CONTACT INFORMATION
+
+                <!-- FORM INPUT -->
+                <form class="form-control-sm">
+                    <!-- Name input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" id="form4Example1" class="form-control" />
+                        <label class="form-label" for="form4Example1">Name</label>
+                    </div>
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="form4Example2" class="form-control" />
+                        <label class="form-label" for="form4Example2">Email address</label>
+                    </div>
+                    <!-- Message input -->
+                    <div class="form-outline mb-4">
+                        <textarea class="form-control" id="form4Example3" rows="4" data-mdb-showcounter="true"
+                            maxlength="150"></textarea>
+                        <label class="form-label" for="form4Example3">Message</label>
+                        <div class="form-helper"></div>
+                    </div>
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                        <input class="form-check-input-dark me-2" type="checkbox" value="" id="form4Example4" checked />
+                        <label class="form-check-label" for="form4Example4">
+                            Send me a copy of this message
+                        </label>
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="placeholder-glow btn btn-dark btn-block mb-4">Send</button>
+                </form>
+                <!-- Contact Info -->
+                <div class="card mx-2 nav-link text-center ">
+                    <div class="card-body text-body py-1">
+                        <i class="fa-solid fa-phone fa-lg" style="color: Dodgerblue;"></i>
+                        <p class="pt-1"> (+52) 558-774-8793 Phone Number </p>
+                        <i class="fa-brands fa-whatsapp fa-lg" style="color: Dodgerblue;"></i>
+                        <p class="pt-1"> (+39) 345-893-8527 WhatsApp</p>
+                        <i class="fa-solid fa-envelope fa-lg" style="color: Dodgerblue;"></i>
+                        <p class="pt-1"> gpena@eitoarchitects.com </p>
+                        <i class="fa-solid fa-map-location-dot fa-lg" style="color: Dodgerblue;"></i>
+                        <p class="pt-1"> San Eduardo, 5524
+                            <br>
+                            Vista Sol
+                            <br>
+                            Guadalupe, N.L
+                        </p>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -189,11 +238,11 @@
     </div>
 
     <!-- PERSPECTIVE INTERACTION -->
-    <section id="home" class="bgimage img-fluid" id="home">
+    <section id="home" class="bgimage img-fluid">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-xs-12 hero-text">
-                    <section class="hero hero-small top-hr">
+                    <section class="hero hero-small top-hr wave-text">
                         <span id="rot2">A</span>
                         &nbsp; <span>D I F F E R E N T</span>
                         <span class="two-dots">&nbsp;:</span>
@@ -218,77 +267,67 @@
     </section>
 
     <!-- ABOUT ME -->
-    <section id="aboutMe">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center pb-4">About Me</h1>
+    <section class='container'>
+        <div class="mt-4 pt-4">
+            <h1 class="text-center pb-4" style="padding-top:3em" id="aboutMe">About Me</h1>
             <div class="row">
                 <!-- IMAGEN ABOUT ME -->
                 <div class="col-lg-4">
                     <div class="img-wrapper">
                         <img class="zoom blur img-about" src="./Assets/Images/Profile_01.jpeg" class="img-about" alt="">
-
                         <a class="content fade btn btn-outline-light" type="button" data-bs-toggle="modal"
                             data-bs-target="#contact-modal">HIRE ME!</a>
                     </div>
 
-                    <!-- PERSONAL INFO COL -->
-                    <div class="col-lg-12 text-left pt-4 about-sm">
-                        <ul>
-                            <li class="col-lg-12">MSc Architect Gerardo Peña</li>
-                            <li class="col-lg-12">Age: 34</li>
-                            <li class="col-lg-12">Other occupations: Building Structure Engineer | Web Developer |
-                                FreeLancer
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-8 align-items-center">
 
-                    <!-- PARAGRAPHs ABOUT ME COL -->
-                    <p class="text-justify px-2 about-sm">
+                </div>
+                <!-- PARAGRAPHs ABOUT ME COL -->
+                <div class="card bg-transparent col-lg-8 align-items-center overflow-auto" style="height: 50vh ;">
+                    <p class="text-justify ps-2 about-sm">
                         I'm an Architect with a master's degree in Buildings Structure. First of all, at this very
                         moment, I'm improving my skills and growing professionally in the LEED area for Certification of
                         Sustainable Design and Bioclimatic Architecture with a BIM Manager experience on my back.
                         Furthermore, I have 10+ years of experience in the field of Architecture Design and Construction
                         Area as a supervisor. So far, I have made my own projects as well with high quality and full
                         dedication to them. If you love what you do, there are no complaints. </p>
-
-                    <p class="text-justify px-2 about-sm">
+                    <p class="text-justify ps-2 about-sm">
                         However, given the fact that I'm a normal human being and I'm one of the "time is gold" type of
                         guy, I'm also inside the coding world as a Developer Web Designer. Therefore, I'm improving
                         daily conquering different ways to code and debug in no time.
                         Making a FullStack Bootcamp made me realize that it's a real game changer and keeps my mind busy
                         24/7 applying these skills within my architectural responsibilities and mindset. There are no
                         restrictions when making the time worthwhile is an option, so I love every moment of it. </p>
-
-                    <p class="text-justify px-2 about-sm">
+                    <p class="text-justify ps-2 about-sm">
                         My goals in the short term are always to keep evolving and adapting to the world that we live
                         in, so I'm trying to apply that mechanism in Architecture Design and Full Stack Web Development.
                         Not least, my main objectives are to achieve greatness in both areas, working for a big company
                         as a developer to apply those skills and all my knowledge to help in every aspect I can, so that
                         I can apply my architectural skills to my personal journey as an Architect as well. </p>
-
-                    <p class="text-justify px-2 about-sm">
+                    <p class="text-justify ps-2 about-sm">
                         At last, setting the professional side apart, I'm definitely the type of person that loves
                         extreme activities. I will rather be in cold weather than hot. Thus, it's not weird that my main
                         hobby is snowboarding and skydiving. I love sports, I'm a cinephile, and I do love spending my
                         time in coffee shops with my laptop and a book from time to time. </p>
-
-                    <p class="text-justify px-2 about-sm">
+                    <p class="text-justify ps-2 about-sm">
                         I'm looking forward to seeing what's next and enjoying the path of it.</p>
-
                 </div>
-
+                <!-- PERSONAL INFO COL -->
+                <div class="container-fluid text-center">
+                    <div class="col-lg-12 text-left pt-4 about-sm">
+                        <ul>
+                            <li class="col-lg-12 text-justify">MSc Architect Gerardo Peña </li>
+                            <span class="text-end">Age: 34</span>
+                            <li class="col-lg-12">Other occupations: Building Structure Engineer | Web Developer |
+                                FreeLancer
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <a id="back-to-top" href="#home" class="col-6 mx-auto btn btn-light btn-md back-to-top align-items-end"
-                    role="button"><i class="fas fa-arrow-up"></i></a>
-
-                <!-- <a type="button" class="btn btn-floating btn-md btn-back-to-top visually-hidden" href="#home">
-                    <i class="fas fa-arrow-up"></i>
-                </a> -->
+                    role="button"><i class="fa fa-angle-double-up"></i></a>
             </div>
 
-            <div class="container-fluid text-center">
-            </div>
+
         </div>
     </section>
 
@@ -327,6 +366,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
 
 </body>
 
