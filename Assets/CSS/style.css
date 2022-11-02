@@ -170,8 +170,15 @@ ul {
 }
 
 /* EXPERIENCE SECTION */
-.bg-contest {
+.bg-carousel {
     height: 100vh;
+    /* background: url("../Images/HeroImg.jpg") fixed center no-repeat; */
+    /* background-size: cover; */
+    position: relative;
+    overflow: hidden;
+}
+.bg-contest {
+    height: auto;
     /* background: url("../Images/HeroImg.jpg") fixed center no-repeat; */
     /* background-size: cover; */
     position: relative;
@@ -186,7 +193,7 @@ ul {
 } */
 .container-grid {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 1rem;
 }
 .container-grid img {   
     object-fit: cover;
@@ -275,3 +282,30 @@ footer {
         margin-bottom: 25rem;
     }
  }
+
+ @media screen and (min-width:768px) {
+    .container-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+    .container-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .box1 {
+        /* grid-column: 2 / 4; 
+        grid-row: 1 / 3; */
+
+        grid-area: 1 / 2 / 3 / 4;
+
+        /* Both of this options give the same result. 
+        NOTE: GRID AREA goes as: (START: row 1, column 2) (END: row 3, column 4) you are defining the area covered. */
+    }
+    .box2 {
+        grid-area: 1/1/3/3
+    }
+    
+}

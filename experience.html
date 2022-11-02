@@ -7,16 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>EITO | ARCHITECTS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Script Bootstrap-5.2 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- Script for icons and fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Script for main interaction -->
-    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <!-- MDB Links -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
 </head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+<!-- Script Bootstrap-5.2 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+<!-- Script for icons and fonts -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Script for main interaction -->
+<link rel="stylesheet" href="./Assets/CSS/style.css">
 
 </html>
 
@@ -54,16 +59,16 @@
                                 EXPERIENCE
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#work-id">Projects</a></li>
+                                <li><a class="dropdown-item" href="#carousel-projects">Projects</a></li>
                                 <li><a class="dropdown-item" href="#contest-id">Architectural Contests</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">WEB Development</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
                                 <li><a class="dropdown-item" href="#work-progress-id">Work in Progress</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item pb-0" style="color: dodgerblue ;" href="#">WEB
+                                        Development</a></li>
+                                <hr style="margin-bottom: 0; padding-bottom: 0;">
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -179,8 +184,53 @@
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Me</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body nav-link">
-                    ... ADDING MY CONTACT INFORMATION
+
+                <!-- FORM INPUT -->
+                <form class="form-control-sm">
+                    <!-- Name input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" id="form4Example1" class="form-control" />
+                        <label class="form-label" for="form4Example1">Name</label>
+                    </div>
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="form4Example2" class="form-control" />
+                        <label class="form-label" for="form4Example2">Email address</label>
+                    </div>
+                    <!-- Message input -->
+                    <div class="form-outline mb-4">
+                        <textarea class="form-control" id="form4Example3" rows="4" data-mdb-showcounter="true"
+                            maxlength="150"></textarea>
+                        <label class="form-label" for="form4Example3">Message</label>
+                        <div class="form-helper"></div>
+                    </div>
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                        <input class="form-check-input-dark me-2" type="checkbox" value="" id="form4Example4" checked />
+                        <label class="form-check-label" for="form4Example4">
+                            Send me a copy of this message
+                        </label>
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="placeholder-glow btn btn-dark btn-block mb-4">Send</button>
+                </form>
+                <!-- Contact Info -->
+                <div class="card mx-2 nav-link text-center ">
+                    <div class="card-body text-body py-1">
+                        <i class="fa-solid fa-phone fa-lg" style="color: Dodgerblue;"></i>
+                        <p class="pt-1"> (+52) 558-774-8793 Phone Number </p>
+                        <i class="fa-brands fa-whatsapp fa-lg" style="color: Dodgerblue;"></i>
+                        <p class="pt-1"> (+39) 345-893-8527 WhatsApp</p>
+                        <i class="fa-solid fa-envelope fa-lg" style="color: Dodgerblue;"></i>
+                        <p class="pt-1"> gpena@eitoarchitects.com </p>
+                        <i class="fa-solid fa-map-location-dot fa-lg" style="color: Dodgerblue;"></i>
+                        <p class="pt-1"> San Eduardo, 5524
+                            <br>
+                            Vista Sol
+                            <br>
+                            Guadalupe, N.L
+                        </p>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -189,8 +239,8 @@
         </div>
     </div>
 
-    <!-- CAROUSEL METHOD -->
-    <div id="carouselExampleIndicators" class="carousel slide bg-contest" data-bs-ride="true">
+    <!-- CAROUSEL METHOD - PROJECTS BANNER -->
+    <div id="carousel-projects" class="carousel slide bg-carousel" data-bs-ride="true">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -243,7 +293,7 @@
         </button>
     </div>
 
-    <!-- WORK INTERACTION -->
+    <!-- WEB PROJECTS | NEED ANOTHER BACKGROUND WITH A GRID DISPLAYED IN LOGOS OR ICONS -->
     <!-- <section id="work-id" class="bgimage img-fluid" id="home">
 
         <div class="container-grid">
@@ -260,46 +310,47 @@
 
     </section> -->
 
+    <!-- CONTEST -->
     <section id="contest-id" class="bg-contest img-fluid" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-xs-12 hero-text">
-                    <div class="hero hero-small top-hr">
-                        <section class="contestContainer">
 
-                            <h2>ARCHITECTURAL CONTESTS</h2>
-                            <img src="https://picsum.photos/200?random=7" alt="" class="showOff">
-                            <img src="https://picsum.photos/200?random=8" alt="" class="showOff">
-                            <img src="https://picsum.photos/200?random=9" alt="" class="showOff">
-                            <img src="https://picsum.photos/200?random=10" alt="" class="showOff">
-                            <img src="https://picsum.photos/200?random=11" alt="" class="showOff">
-                            <img src="https://picsum.photos/200?random=12" alt="" class="showOff">
+        <div class="container text-center">
+            <h2 class="pt-5 my-5">CONTEST</h2>
 
-                        </section>
-                    </div>
-                </div>
+            <div class="container-grid" style="--bs-gap:1rem 1rem;">
+                <img src="https://source.unsplash.com/collection/190727/800x600?1"
+                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
+                <img src="https://source.unsplash.com/collection/190727/800x600?2"
+                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
+                <img src="https://source.unsplash.com/collection/190727/800x600?3"
+                    class="box1 rounded bg-white opacity-75 d-block w-100" alt="...">
+                <img src="https://source.unsplash.com/collection/190727/800x600?4"
+                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
+                <img src="https://source.unsplash.com/collection/190727/800x600?5"
+                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
+                <img src="https://source.unsplash.com/collection/190727/800x600?6"
+                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
             </div>
         </div>
     </section>
 
-    <section id="work-progress-id" class="bg-contest img-fluid" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-xs-12 hero-text">
-                    <div class="hero hero-small top-hr">
-                        <section class="contestContainer">
+    <!-- WORK IN PROGRESS -->
+    <section id="work-progress-id" class="bg-contest img-fluid">
+        <div class="container text-center">
+            <h2 class="pt-5 my-5">WORK IN PROGRESS</h2>
 
-                            <h2>WORK IN PROGRESS</h2>
-                            <img src="https://picsum.photos/200?random=13" alt="" class="showOff">
-                            <img src="https://picsum.photos/200?random=14" alt="" class="showOff">
-                            <img src="https://picsum.photos/200?random=15" alt="" class="showOff">
-                            <img src="https://picsum.photos/200?random=16" alt="" class="showOff">
-                            <img src="https://picsum.photos/200?random=17" alt="" class="showOff">
-                            <img src="https://picsum.photos/200?random=18" alt="" class="showOff">
-
-                        </section>
-                    </div>
-                </div>
+            <div class="container-grid" style="--bs-gap:1rem 1rem;">
+                <img src="https://source.unsplash.com/collection/190727/800x600?1"
+                    class="box2 rounded bg-white opacity-75 d-block w-100" alt="...">
+                <img src="https://source.unsplash.com/collection/190727/800x600?2"
+                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
+                <img src="https://source.unsplash.com/collection/190727/800x600?3"
+                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
+                <img src="https://source.unsplash.com/collection/190727/800x600?4"
+                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
+                <img src="https://source.unsplash.com/collection/190727/800x600?5"
+                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
+                <img src="https://source.unsplash.com/collection/190727/800x600?6"
+                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
             </div>
         </div>
     </section>
@@ -339,6 +390,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
 
 </body>
 
