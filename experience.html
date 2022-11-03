@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>EITO | ARCHITECTS</title>
+    <title>GERARDO | PEÑA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- MDB Links -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
@@ -30,7 +30,7 @@
     <!-- NAVBAR with OFF CANVAS -->
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand high-text" href="home.html">EITO | ARCHITECTS</a>
+            <a class="navbar-brand high-text" href="home.html">G | P</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -43,34 +43,36 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <!-- HOME LINK -->
+                        <!-- HOME NAV -->
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
                         </li>
-                        <!-- RESUME LINK -->
+                        <!-- RESUME NAV -->
                         <li class="nav-item">
                             <a class="nav-link" type="button" data-bs-toggle="modal"
                                 data-bs-target="#resume-modal">RESUME</a>
                         </li>
-                        <!-- EXPERIENCE DROPDOWN -->
+                        <!-- EXPERIENCE NAV -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 EXPERIENCE
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#carousel-projects">Projects</a></li>
-                                <li><a class="dropdown-item" href="#contest-id">Architectural Contests</a></li>
-                                <li><a class="dropdown-item" href="#work-progress-id">Work in Progress</a></li>
+                                <!-- <li><a class="dropdown-item" href="#carousel-projects">Projects</a></li> -->
+                                <li><a class="dropdown-item" href="#architecture-id">Architecture</a></li>
+                                <li><a class="dropdown-item" href="#contest-id">Contests</a></li>
 
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item pb-0" style="color: dodgerblue ;" href="#">WEB
+                                <li><a class="dropdown-item pb-0" style="color: dodgerblue ;"
+                                        href="#web-development">WEB
                                         Development</a></li>
                                 <hr style="margin-bottom: 0; padding-bottom: 0;">
                             </ul>
                         </li>
+                        <!-- CONTACT NAV -->
                         <li class="nav-item">
                             <a class="nav-link" type="button" data-bs-toggle="modal"
                                 data-bs-target="#contact-modal">CONTACT</a>
@@ -90,63 +92,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body nav-link">
-                    ... ADDING MY RESUME
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    SCROLL CAPACITY FOR FUTURE INTERACTION
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    ...ENDING
+                    <iframe src="./Assets/Images/CV_GERARDO PEÑA.pdf" class="bgimage container-fluid" height="100%"
+                        width="100%" frameborder="0"></iframe>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
@@ -159,14 +106,15 @@
     <!-- MODAL INSIDE RESUME FOR EXTRA PROFESIONAL INFO -->
     <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
         tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5 " id="exampleModalToggleLabel2">Overseas Experience</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Overseas Experience</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    International Map of my Foreign Activity.
+                    <iframe src="./Assets/Images/Overseas_XP.pdf" class="bg-modal" height="100%" width="100%"
+                        frameborder="0"></iframe>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-primary" data-bs-target="#resume-modal" data-bs-toggle="modal">Back to
@@ -239,118 +187,139 @@
         </div>
     </div>
 
-    <!-- CAROUSEL METHOD - PROJECTS BANNER -->
-    <div id="carousel-projects" class="carousel slide bg-carousel" data-bs-ride="true">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://source.unsplash.com/collection/190727/800x600?1"
-                    class="bg-white opacity-75 bd-placeholder-img bd-placeholder-img-lg d-block w-100" alt="..."
-                    role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice"
-                    focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First
-                    slide</text>
-
-            </div>
-            <div class="carousel-item">
-
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#666"></rect>
-                <text x="50%" y="50%" fill="#444" dy=".3em">Second
-                    slide</text>
-                <img src="https://source.unsplash.com/collection/190727/800x600?2"
-                    class="bg-white opacity-75 d-block w-100" alt="..." role="img"
-                    aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
-
-            </div>
-            <div class="carousel-item">
-                <img src="https://source.unsplash.com/collection/190727/800x600?3"
-                    class="bg-white opacity-75 d-block w-100" alt="..." role="img" aria-label="Placeholder: Third slide"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third
-                    slide</text>
-
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <!-- WEB PROJECTS | NEED ANOTHER BACKGROUND WITH A GRID DISPLAYED IN LOGOS OR ICONS -->
-    <!-- <section id="work-id" class="bgimage img-fluid" id="home">
-
-        <div class="container-grid">
-            <img src="https://source.unsplash.com/collection/190727/800x600?1"></img>
-            <img src="https://source.unsplash.com/collection/190727/800x600?2"></img>
-            <img src="https://source.unsplash.com/collection/190727/800x600?3"></img>
-            <img src="https://source.unsplash.com/collection/190727/800x600?4"></img>
-            <img src="https://source.unsplash.com/collection/190727/800x600?5"></img>
-            <img src="https://source.unsplash.com/collection/190727/800x600?6"></img>
-            <img src="https://source.unsplash.com/collection/190727/800x600?7"></img>
-            <img src="https://source.unsplash.com/collection/190727/800x600?8"></img>
-            <img src="https://source.unsplash.com/collection/190727/800x600?9"></img>
-        </div>
-
-    </section> -->
-
-    <!-- CONTEST -->
-    <section id="contest-id" class="bg-contest img-fluid" id="home">
+    <!-- ARCHITECTURE -->
+    <section id="architecture-id" class="bg-contest img-fluid" id="home">
 
         <div class="container text-center">
-            <h2 class="pt-5 my-5">CONTEST</h2>
+            <h2 class="pt-5 my-5">ARCHITECTURE</h2>
 
             <div class="container-grid" style="--bs-gap:1rem 1rem;">
-                <img src="https://source.unsplash.com/collection/190727/800x600?1"
-                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
-                <img src="https://source.unsplash.com/collection/190727/800x600?2"
-                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
-                <img src="https://source.unsplash.com/collection/190727/800x600?3"
-                    class="box1 rounded bg-white opacity-75 d-block w-100" alt="...">
-                <img src="https://source.unsplash.com/collection/190727/800x600?4"
-                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
-                <img src="https://source.unsplash.com/collection/190727/800x600?5"
-                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
-                <img src="https://source.unsplash.com/collection/190727/800x600?6"
-                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?1"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-left">A_01</div>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?2"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-right">A_02</div>
+                </div>
+
+                <div class="img-wrapper box1">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?3"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-up">A_03</div>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?4"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-down">A_04</div>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?5"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-left">A_05</div>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?6"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-right">A_06</div>
+                </div>
+            </div>
+    </section>
+
+    <!-- CONTESTS -->
+    <section id="contest-id" class="bg-contest img-fluid">
+        <div class="container text-center">
+            <h2 class="pt-5 my-5">CONTESTS</h2>
+
+            <div class="container-grid" style="--bs-gap:1rem 1rem;">
+                <div class="img-wrapper box2">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?1"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-left">C_01</div>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?2"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-right">C_02</div>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?3"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-up">C_03</div>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?4"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-down">C_04</div>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?5"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-left">C_05</div>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?6"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-right">C_06</div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- WORK IN PROGRESS -->
-    <section id="work-progress-id" class="bg-contest img-fluid">
+    <!-- WEB PROJECTS | NEED ANOTHER BACKGROUND WITH A GRID DISPLAYED IN LOGOS OR ICONS -->
+    <section id="web-development" class="bg-contest img-fluid">
         <div class="container text-center">
-            <h2 class="pt-5 my-5">WORK IN PROGRESS</h2>
+            <h2 class="pt-5 my-5">WEB DEVELOPMENT</h2>
 
             <div class="container-grid" style="--bs-gap:1rem 1rem;">
-                <img src="https://source.unsplash.com/collection/190727/800x600?1"
-                    class="box2 rounded bg-white opacity-75 d-block w-100" alt="...">
-                <img src="https://source.unsplash.com/collection/190727/800x600?2"
-                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
-                <img src="https://source.unsplash.com/collection/190727/800x600?3"
-                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
-                <img src="https://source.unsplash.com/collection/190727/800x600?4"
-                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
-                <img src="https://source.unsplash.com/collection/190727/800x600?5"
-                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
-                <img src="https://source.unsplash.com/collection/190727/800x600?6"
-                    class="rounded bg-white opacity-75 d-block w-100" alt="...">
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?1"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-left">WD_01</div>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?2"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-down">WD_02</div>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?3"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-up">WD_03</div>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?4"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-right">WD_04</div>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?5"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-left">WD_05</div>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/190727/800x600?6"
+                        class="zoom blur rounded bg-white opacity-75 d-block w-100" alt="...">
+                    <div class="content fade slide-down">WD_06</div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -371,7 +340,7 @@
                         class="high-icon fa-brands fa-xl fa-github"></i></a>
             </li>
             <!-- Instagram -->
-            <li class="nav-item"><a href="https://www.instagram.com/" target="_blank"
+            <li class="nav-item"><a href="https://www.instagram.com/jerryo8x" target="_blank"
                     class="nav-link px-2 text-muted"><i style="padding-right: 0.3em;"
                         class="high-icon fa-brands fa-xl fa-instagram"></i></a>
             </li>
@@ -390,7 +359,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
 
 </body>

@@ -168,6 +168,31 @@ ul {
 .img-wrapper:hover > .content.fade {
     opacity: 1;
 }
+/* SLIDE EFFECT SEPARATED */
+.img-wrapper > .content.slide-left {
+    transform: translateX(-100%)
+}
+.img-wrapper:hover > .content.slide-left {
+    transform: translateX(0);
+}
+.img-wrapper > .content.slide-down {
+    transform: translateY(-100%)
+}
+.img-wrapper:hover > .content.slide-down {
+    transform: translateY(0);
+}
+.img-wrapper > .content.slide-up {
+    transform: translateY(100%)
+}
+.img-wrapper:hover > .content.slide-up {
+    transform: translateY(0);
+}
+.img-wrapper > .content.slide-right {
+    transform: translateX(100%)
+}
+.img-wrapper:hover > .content.slide-right {
+    transform: translateX(0);
+}
 
 /* EXPERIENCE SECTION */
 .bg-carousel {
@@ -184,13 +209,13 @@ ul {
     position: relative;
     overflow: hidden;
 }
-
-/* .workContainer h2 {
-    padding-left: 20px;
+.bg-modal {
+    height: 70vh;
+    /* background: url("../Images/HeroImg.jpg") fixed center no-repeat; */
+    /* background-size: cover; */
+    position: relative;
+    overflow: hidden;
 }
-.contestContainer h2 {
-    padding-left: 20px;
-} */
 .container-grid {
     display: grid;
     grid-gap: 1rem;
