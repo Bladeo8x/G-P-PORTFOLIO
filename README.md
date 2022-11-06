@@ -73,7 +73,7 @@ The following image demostrates the aftermath of the website in `APPEARANCE`, an
 <p align="center">
   <img width="100%" src="./Assets/Images/Portfolio%20GP.gif">
 
-> ### LINK : [CLICK Here to see the Website Result !](https://bladeo8x.github.io/01-CHALLENGE/)
+> ### LINK : [CLICK Here to see the Website Result !](https://bladeo8x.github.io/G-P-PORTFOLIO/)
 
 <br>
 
