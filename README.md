@@ -32,25 +32,25 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 > ### DEVELOPER ID
 
-- The site have a Nav Bar very detailed, having specific sections for each detailed information, like About the developer, his projects, his contact, cv, and so on.
+- The site have a Nav Bar very detailed, having specific sections for each detailed information, like About the developer, his projects, his contact, CV, and so on.
 
 <br>
 
 > ### UI SCROLLS & ITS DESIGNATION
 
-- All sections were defined according the target location that its meant. The map source on the web its easy and confortable to go back and forward if its needed. The site was implemented with modals to have a better user experience.
+- All sections were defined according to the target location that it's meant. The map source on the web, it's easy and comfortable to go back and forward if it's needed. The site was implemented with modals to have a better user experience.
 
 <br>
 
 > ### EMPHAZIS ON PRIORITY PROJECTS
 
-- The section of Experience was designed targeting the projects of different carreers and actual jobs and apps done by the author itself. The portfolio has the capacity to be modified with the same structure in order to just introduce new projects to come.
+- The section of Experience was designed targeting the projects of different careers and actual jobs and apps done by the author itself. The portfolio has the capacity to be modified with the same structure in order to just introduce new projects to come.
 
 <br>
 
 > ### PROJECTS & APPLICATION CASES WITH INTERACTION
 
-- Having said that, the section of projects has being thought to provoke a visual emphazis on the bigger images dedicated for main projects with a high intention to be displayed.
+- Having said that, the section of projects has being thought to provoke a visual emphasis on the bigger images dedicated for main projects with a high intention to be displayed.
 
 <br>
 
@@ -66,12 +66,12 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## | MOCK-UP |
 
-The following image demostrates the aftermath of the website in `APPEARANCE`, and `FUNCTIONALITY`:
+The following image demonstrates the aftermath of the website in `APPEARANCE`, and `FUNCTIONALITY`:
 
 `The Portfolio G|P webpage on the aftermath:`
 
 <p align="center">
-  <img width="100%" src="./Assets/Images/Portfolio%20GP.gif">
+  <img width="100%" src="./Assets/Images/Portfolio%20GP.gif">
 
 > ### LINK : [CLICK Here to see the Website Result !](https://bladeo8x.github.io/G-P-PORTFOLIO/)
 
@@ -91,10 +91,10 @@ Languages most used so far on my repos:
 <br>
 
 <p align="center">
-  <img width="50%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bladeo8x&layout=compact&theme=gruvbox">
+  <img width="50%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bladeo8x&layout=compact&theme=gruvbox">
 
 <br>
 
 <p align= 'center' style="font-size:25px">
-    THANK YOU FOR YOUR TIME!
+    THANK YOU FOR YOUR TIME!
 </p>
